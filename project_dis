@@ -1,0 +1,75 @@
+7_7_1: with wgan-gp gradient penalty; image_size=64
+7_7_2: with new gradient penalty; image_size=64
+7_7_3: remove some errors; image_size=128
+7_7_4: remove some errors; image_size=128; new loss functions; class_num=4; change discriminator
+7_7_5: remove some errors; image_size=128; new loss functions; class_num=4; change discriminator
+; remove patchgan
+#7_7_6: class encoder: from 1024 to 64
+#7_7_7: class encoder: from 1024 to 64; discriminator: remove one residual
+#7_7_7: class encoder; from 1025 to 64; discriminator: remove one residual; using hinge loss
+
+#7_7_8: class encoder; from 1025 to 64; discriminator: using hinge loss; using patchgan; remove some bugs
+#7_7_9: class encoder; from 1025 to 64; discriminator: using hinge loss; using patchgan; remove some bugs; loss_type=3
+#7_7_10: class encoder; from 1025 to 64; discriminator: using hinge loss; using patchgan; remove some bugs; loss_type=3; new dataset
+
+#9_11_1: class encoder; from 1025 to 64; discriminator: using hinge loss; using patchgan; remove some bugs; loss_type=3; new dataset;
+#new feature matching
+
+#9_12_1: class encoder; from 1025 to 64; discriminator: using hinge loss; using patchgan; remove some bugs; loss_type=3; new dataset;
+#new feature matching; new gradient penalty
+
+#9_12_2: class encoder; from 1025 to 64; discriminator: using hinge loss; using patchgan; remove some bugs; loss_type=3; new dataset;
+#new feature matching; new gradient penalty; batch_size=8
+
+#9_12_3: class encoder; from 1025 to 64; discriminator: using hinge loss; using patchgan; remove some bugs; loss_type=3; new dataset;
+#new feature matching; new gradient penalty; batch_size=8; using beta1, beta2
+
+#9_12_4: class encoder; from 1025 to 64; discriminator: using hinge loss; using patchgan; remove some bugs; loss_type=3; new dataset;
+#new feature matching; new gradient penalty; batch_size=8; using beta1, beta2; using gan loss;
+#batch_size=16
+
+#9_12_6: class encoder; from 1025 to 64; discriminator: using hinge loss; using patchgan; remove some bugs; loss_type=3; new dataset;
+#new feature matching; new gradient penalty; batch_size=8; using beta1, beta2; using gan loss;
+#batch_size=8; remove bugs; gp * 10
+
+#9_17_1: class encoder; from 1025 to 64; discriminator: using hinge loss; using patchgan; remove some bugs; loss_type=3; new dataset;
+#new feature matching; new gradient penalty; batch_size=8; using beta1, beta2; using gan loss;
+#batch_size=8; remove bugs; gp * 10; change class encoder
+
+#9_18_1: class encoder; from 1025 to 64; discriminator: using hinge loss; using patchgan; remove some bugs; loss_type=3; new dataset;
+#new feature matching; new gradient penalty; batch_size=8; using beta1, beta2; using gan loss;
+#batch_size=8; remove bugs; gp * 10; change class encoder; change training data with center crop
+
+#9_19_1: class encoder; from 1025 to 64; discriminator: using hinge loss; using patchgan; remove some bugs; loss_type=3; new dataset;
+#new feature matching; new gradient penalty; batch_size=8; using beta1, beta2; using gan loss;
+#batch_size=8; remove bugs; gp * 10; change class encoder; change training data with center crop; new discriminator
+
+#9_20_1: class encoder; from 1025 to 64; discriminator: using hinge loss; using patchgan; remove some bugs; loss_type=3; new dataset;
+#new feature matching; new gradient penalty; batch_size=8; using beta1, beta2; using gan loss;
+#batch_size=8; remove bugs; gp * 10; change class encoder; change training data with center crop; new discriminator
+#content decoder with new in
+
+#9_20_2: class encoder; from 1025 to 64; discriminator: using hinge loss; using patchgan; remove some bugs; loss_type=3; new dataset;
+#new feature matching; new gradient penalty; batch_size=8; using beta1, beta2; using gan loss;
+#batch_size=8; remove bugs; gp * 10; change class encoder; change training data with center crop; new discriminator
+#content decoder with new in; new gp
+
+#9_20_3: class encoder; from 1025 to 64; discriminator: using hinge loss; using patchgan; remove some bugs; loss_type=3; new dataset;
+#new feature matching; new gradient penalty; batch_size=8; using beta1, beta2; using gan loss;
+#batch_size=8; remove bugs; gp * 10; change class encoder; change training data with center crop; new discriminator
+#content decoder with new in; new gp; id_x = id_x - 1
+
+#9_20_4: class encoder; from 1025 to 64; discriminator: using hinge loss; using patchgan; remove some bugs; loss_type=3; new dataset;
+#new feature matching; new gradient penalty; batch_size=8; using beta1, beta2; using gan loss;
+#batch_size=8; remove bugs; gp * 10; change class encoder; change training data with center crop; new discriminator
+#content decoder with new in; new gp; id_x = id_x - 1; add regulation loss
+
+#9_20_5: class encoder; from 1025 to 64; discriminator: using hinge loss; using patchgan; remove some bugs; loss_type=3; new dataset;
+#new feature matching; new gradient penalty; batch_size=8; using beta1, beta2; using gan loss;
+#batch_size=8; remove bugs; gp * 10; change class encoder; change training data with center crop; new discriminator
+#content decoder with new in; new gp; id_x = id_x - 1; add regulation loss; new datasets
+
+#9_20_6: class encoder; from 1025 to 64; discriminator: using hinge loss; using patchgan; remove some bugs; loss_type=3; new dataset;
+#new feature matching; new gradient penalty; batch_size=8; using beta1, beta2; using gan loss;
+#batch_size=8; remove bugs; gp * 10; change class encoder; change training data with center crop; new discriminator
+#content decoder with new in; new gp; id_x = id_x - 1; add regulation loss; new datasets; remove regulation loss
