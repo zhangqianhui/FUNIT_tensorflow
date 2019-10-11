@@ -1,7 +1,10 @@
 # FUNIT_tensorflow
 Tensorflow Implementation of FUNIT: Few-Shot Unsupervised Image-to-Image Translation
 
-<p align="center"> <img src="./imgs/animals.gif" width="92%"> </p>
+<p align="center"> <img src="./imgs/animal.gif" width="92%"> </p>
+
+--------------------------------------------
+[Paper](https://arxiv.org/abs/1905.01723) | Pytorch Code](https://github.com/NVlabs/FUNIT)
 
 # Reference code
 
