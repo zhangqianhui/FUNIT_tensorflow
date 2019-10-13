@@ -55,7 +55,10 @@ Tensorflow Implementation of FUNIT: Few-Shot Unsupervised Image-to-Image Transla
 
 <p align="center"> <img src="./imgs/result1.jpg" width="40%"><img src="./imgs/result2.jpg" width="40%"></p>
  
-- Results on Animals dataset
+- Paper results
+
+<p align="center"> <img src="./imgs/p_result.jpg" width="80%">/p>
+
 
 # Reference code
 
