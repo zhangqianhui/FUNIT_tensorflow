@@ -57,7 +57,7 @@ Tensorflow Implementation of FUNIT: Few-Shot Unsupervised Image-to-Image Transla
  
 - Paper results
 
-<p align="center"> <img src="./imgs/p_result.jpg" width="80%"></p>
+<p align="center"> <img src="./imgs/p_result.jpg" width="90%"></p>
 
 
 # Reference code
