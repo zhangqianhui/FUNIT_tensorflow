@@ -24,7 +24,7 @@ Tensorflow Implementation of FUNIT: Few-Shot Unsupervised Image-to-Image Transla
   
   ```bash
   cd your_path
-  unzip 102flowers.tgz
+  tar -xvf 102flowers.tgz
   ```
   
 - Usage
