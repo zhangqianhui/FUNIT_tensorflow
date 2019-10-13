@@ -47,7 +47,8 @@ Tensorflow Implementation of FUNIT: Few-Shot Unsupervised Image-to-Image Transla
 
 - Results on Flowers dataset 
 
- ![](img/exp2.jpg)
+ ![](img/result1.jpg)
+ ![](img/result2.jpg)
  
 - Results on Animals dataset
 
