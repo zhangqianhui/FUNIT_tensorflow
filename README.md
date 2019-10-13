@@ -18,19 +18,30 @@ Tensorflow Implementation of FUNIT: Few-Shot Unsupervised Image-to-Image Transla
   ```bash
   git clone https://github.com/zhangqianhui/FUNIT_tensorflow.git
   ```
-- Download the Flowders dataset
+- Download the Flowers dataset
 
-  Download the tar of NewGaze dataset from [Google Driver Linking](https://drive.google.com/open?id=1lYzpKdShN68RJGxRF1JgXnW-ved0F-mJ).
+  Download Flowers dataset from [VGG Linking](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/102flowers.tgz) and [label](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/imagelabels.mat).
   
   ```bash
   cd your_path
-  unzip NewGazeData.tar
+  unzip 102flowers.tgz
   ```
+  
+-Usage
+```
+├── Dataset Path
+     ├── jpg
+         ├── xxx.jpg 
+         ├── yyy.png
+         ├── ...
+     ├── imagelabels.mat
+
+```
   
 - Train this model using Flowders dataset
   
   ```bash
-  python train.py 
+  python train.py --data_dir PATH --num_source_class 70
   ```
 - Test
   ```bash
