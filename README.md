@@ -53,7 +53,7 @@ Tensorflow Implementation of FUNIT: Few-Shot Unsupervised Image-to-Image Transla
 
 - Results on Flowers dataset (1-4 rows is: x, y, results, recon)
 
-<p align="center"> <img src="./imgs/result1.jpg" width="70%"><img src="./imgs/result2.jpg" width="70%"></p>
+<p align="center"> <img src="./imgs/result1.jpg" width="40%"><img src="./imgs/result2.jpg" width="40%"></p>
  
 - Results on Animals dataset
 
