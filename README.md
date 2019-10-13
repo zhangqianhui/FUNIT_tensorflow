@@ -24,10 +24,10 @@ Tensorflow Implementation of FUNIT: Few-Shot Unsupervised Image-to-Image Transla
   
   ```bash
   cd your_path
-  unzip 102flowers.tgz
+  tar -xvf 102flowers.tgz
   ```
   
--Usage
+- Usage
 ```
 ├── Dataset Path
      ├── jpg
@@ -53,9 +53,12 @@ Tensorflow Implementation of FUNIT: Few-Shot Unsupervised Image-to-Image Transla
 
 - Results on Flowers dataset (1-4 rows is: x, y, results, recon)
 
-<p align="center"> <img src="./imgs/result1.jpg" width="70%"><img src="./imgs/result2.jpg" width="70%"></p>
+<p align="center"> <img src="./imgs/result1.jpg" width="40%"><img src="./imgs/result2.jpg" width="40%"></p>
  
-- Results on Animals dataset
+- Paper results
+
+<p align="center"> <img src="./imgs/p_result.jpg" width="80%"></p>
+
 
 # Reference code
 
