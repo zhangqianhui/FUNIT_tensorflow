@@ -16,9 +16,9 @@ Tensorflow Implementation of FUNIT: Few-Shot Unsupervised Image-to-Image Transla
 
 - Clone this repo:
   ```bash
-  git clone https://github.com/zhangqianhui/GazeCorrection.git
+  git clone https://github.com/zhangqianhui/FUNIT_tensorflow.git
   ```
-- Download the NewGaze dataset
+- Download the Flowders dataset
 
   Download the tar of NewGaze dataset from [Google Driver Linking](https://drive.google.com/open?id=1lYzpKdShN68RJGxRF1JgXnW-ved0F-mJ).
   
@@ -26,22 +26,17 @@ Tensorflow Implementation of FUNIT: Few-Shot Unsupervised Image-to-Image Transla
   cd your_path
   unzip NewGazeData.tar
   ```
-
-- Pretraining Model
-
-  We have provided the self-guided pretraining model in directory: ./sg_pre_model_g
-
-- Train this model using the your parameter
-
-  (1)Please edit the config.py file to select the proper hyper-parameters.
   
-  (2)Change the "base_path" to "your_path" of NewGaze dataset.
-  
-  Then
+- Train this model using Flowders dataset
   
   ```bash
-  python main.py 
+  python train.py 
   ```
+- Test
+  ```bash
+  python test.py 
+  ```
+
 
 ## Our results
 
