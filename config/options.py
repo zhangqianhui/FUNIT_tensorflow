@@ -7,7 +7,7 @@ class BaseOptions():
         self.initialized = False
 
     def initialize(self, parser):
-        parser.add_argument('--data_dir', type=str, default='/home/hezhenliang/Projects/zhangjichao/dataset/flowers/', help='path to images')
+        parser.add_argument('--data_dir', type=str, default='/home/dataset/flowers/', help='path to images')
         parser.add_argument('--batchSize', type=int, default=4, help='input batch size')
         parser.add_argument('--image_size', type=int, default=128, help='scale images to this size')
         parser.add_argument('--input_nc', type=int, default=3, help='# of input image channels')
