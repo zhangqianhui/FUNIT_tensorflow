@@ -16,42 +16,46 @@ Tensorflow Implementation of FUNIT: Few-Shot Unsupervised Image-to-Image Transla
 
 - Clone this repo:
   ```bash
-  git clone https://github.com/zhangqianhui/GazeCorrection.git
+  git clone https://github.com/zhangqianhui/FUNIT_tensorflow.git
   ```
-- Download the NewGaze dataset
+- Download the Flowers dataset
 
-  Download the tar of NewGaze dataset from [Google Driver Linking](https://drive.google.com/open?id=1lYzpKdShN68RJGxRF1JgXnW-ved0F-mJ).
+  Download Flowers dataset from [VGG Linking](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/102flowers.tgz) and [label](http://www.robots.ox.ac.uk/~vgg/data/flowers/102/imagelabels.mat).
   
   ```bash
   cd your_path
-  unzip NewGazeData.tar
+  unzip 102flowers.tgz
   ```
-
-- Pretraining Model
-
-  We have provided the self-guided pretraining model in directory: ./sg_pre_model_g
-
-- Train this model using the your parameter
-
-  (1)Please edit the config.py file to select the proper hyper-parameters.
   
-  (2)Change the "base_path" to "your_path" of NewGaze dataset.
+-Usage
+```
+├── Dataset Path
+     ├── jpg
+         ├── xxx.jpg 
+         ├── yyy.png
+         ├── ...
+     ├── imagelabels.mat
+
+```
   
-  Then
+- Train this model using Flowders dataset
   
   ```bash
-  python main.py 
+  python train.py --data_dir PATH --num_source_class 70
   ```
+- Test
+  ```bash
+  python test.py 
+  ```
+
 
 ## Our results
 
-- Results on Flowers dataset 
+- Results on Flowers dataset (1-4 rows is: x, y, results, recon)
 
- ![](img/exp2.jpg)
+<p align="center"> <img src="./imgs/result1.jpg" width="70%"><img src="./imgs/result2.jpg" width="70%"></p>
  
 - Results on Animals dataset
-
- ![](img/exp1.jpg)
 
 # Reference code
 
