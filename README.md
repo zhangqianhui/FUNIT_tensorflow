@@ -51,8 +51,6 @@ Tensorflow Implementation of FUNIT: Few-Shot Unsupervised Image-to-Image Transla
  
 - Results on Animals dataset
 
- ![](img/exp1.jpg)
-
 # Reference code
 
 - [Gazecorrection](https://github.com/zhangqianhui/GazeCorrection)
