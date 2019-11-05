@@ -149,10 +149,7 @@ class FSUGAN(object):
                         self.x_recon
                     ],feed_dict=f_d)
 
-                    output_img = np.concatenate([train_output_img[0],
-                                                 train_output_img[1],
-                                                 train_output_img[2],
-                                                 train_output_img[3]],axis=0)
+                    output_img = np.concatenate([img for img in train_output_img[0:4]],axis=0)
 
                     save_images(output_img, [output_img.shape[0]/self.opt.batchSize, self.opt.batchSize],
                                 '{}/{:02d}_output_img.jpg'.format(self.opt.sample_dir, step))
